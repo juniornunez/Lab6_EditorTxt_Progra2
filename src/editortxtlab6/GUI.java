@@ -15,6 +15,7 @@ public class GUI extends JFrame {
     private Funcionalidad funcionalidad;
 
     public GUI() {
+        
         setTitle("Editor de Texto");
         setSize(800, 600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -136,9 +137,11 @@ public class GUI extends JFrame {
     }
 
     public static void main(String[] args) {
+        
         SwingUtilities.invokeLater(() -> {
             GUI editor = new GUI();
             editor.setVisible(true);
+            editor.setLocationRelativeTo(null);
         });
     }
 }
